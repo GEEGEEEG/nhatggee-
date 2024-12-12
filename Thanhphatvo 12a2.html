@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce Myself</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Exo:100);
+        /* Background data */
+        /* Animations */
+        @-webkit-keyframes bg-scrolling-reverse {
+          100% {
+            background-position: 50px 50px;
+          }
+        }
+        @-moz-keyframes bg-scrolling-reverse {
+          100% {
+            background-position: 50px 50px;
+          }
+        }
+        @-o-keyframes bg-scrolling-reverse {
+          100% {
+            background-position: 50px 50px;
+          }
+        }
+        @keyframes bg-scrolling-reverse {
+          100% {
+            background-position: 50px 50px;
+          }
+        }
+        @-webkit-keyframes bg-scrolling {
+          0% {
+            background-position: 50px 50px;
+          }
+        }
+        @-moz-keyframes bg-scrolling {
+          0% {
+            background-position: 50px 50px;
+          }
+        }
+        @-o-keyframes bg-scrolling {
+          0% {
+            background-position: 50px 50px;
+          }
+        }
+        @keyframes bg-scrolling {
+          0% {
+            background-position: 50px 50px;
+          }
+        }
+        /* Main styles */
+        body {
+            font-family: Exo, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+            color: #999;
+            text-align: center;
+            animation: bg-scrolling-reverse 0.92s infinite linear;
+        }
+        body::before {
+            content: "INFINITY";
+            font-size: 8rem;
+            font-weight: 100;
+            font-style: normal;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            border-radius: 50%;
+            margin-right: 15px;
+            width: 50px;
+            height: 50px;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .container {
+            padding: 20px;
+        }
+        .friends-box {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .friend {
+            margin-bottom: 10px;
+        }
+        .schedule {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .schedule table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .schedule th, .schedule td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .schedule th {
+            background-color: #f2f2f2;
+        }
+        /* Centered iframe container */
+        .iframe-container {
+            margin: 20px auto; /* Center horizontally */
+            overflow: hidden;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            width: 80%;
+            height: 40px; /* Closed state height */
+            transition: height 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center content inside iframe container */
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            transform: scale(0.9); /* Slightly shrunk */
+            transition: transform 0.3s ease;
+        }
+        .iframe-container:hover {
+            height: 400px; /* Expanded state height */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+        }
+        .iframe-container:hover iframe {
+            transform: scale(1); /* Restore to full size */
+        }
+        .social-links {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .social-links a {
+            display: block;
+            margin-bottom: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.pinimg.com/736x/ab/4c/23/ab4c23a9bfbc64ac1edb34563a61a4a9.jpg" alt="My Avatar">
+    <a href="https://www.facebook.com/thanh.phat.vo.500622" target="_blank">nhatgeegee</a>
+</header>
+
+<div class="container">
+    <div class="friends-box">
+        <h2>My Facebook Friends</h2>
+        <div class="friend">
+            <a href="https://www.facebook.com/PhuHopeLess07" target="_blank">phuhopless</a>
+        </div>
+        <div class="friend">
+            <a href="https://www.facebook.com/thanhkhoa.tran.bakaa" target="_blank">thankhoa</a>
+        </div>
+        <div class="friend">
+            <a href="https://www.facebook.com/tran.chautien.7" target="_blank">Chau Tien</a>
+        </div>
+        <!-- Add more friends as needed -->
+    </div>
+
+    <div class="schedule">
+        <h2>My Weekly Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Morning</th>
+                    <th>Afternoon</th>
+                    <th>Evening</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Activity 1</td>
+                    <td>Activity 2</td>
+                    <td>Activity 3</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Activity 4</td>
+                    <td>Activity 5</td>
+                    <td>Activity 6</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Activity 7</td>
+                    <td>Activity 8</td>
+                    <td>Activity 9</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Activity 10</td>
+                    <td>Activity 11</td>
+                    <td>Activity 12</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Activity 13</td>
+                    <td>Activity 14</td>
+                    <td>Activity 15</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Activity 16</td>
+                    <td>Activity 17</td>
+                    <td>Activity 18</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Activity 19</td>
+                    <td>Activity 20</td>
+                    <td>Activity 21</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="iframe-container">
+        <h2>My Weekly Schedule in Detail</h2>
+        <iframe src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462553622_1299750371473810_258654469055584960_n.png?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeENvw48GCRpsErWRdcx_tXBtFPbrR1Q6ES0U9utHVDoRFbFkOWBov5RC9SbvVF5w-jRnFztnw6jVAuExGzMQQIj&_nc_ohc=YthmbD63E6wQ7kNvgEY54Ho&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFjqhKl_NWOu0--s9ZOD3xWAAwaL22SUljQ_Ku_ODgV9A&oe=67827E48" title="Weekly Schedule"></iframe>
+    </div>
+
+    <div class="iframe-container">
+        <h2>My Pinterest Pictures</h2>
+        <iframe src="https://www.pinterest.com/nhatchickengang/_saved/" title="Pinterest Pictures"></iframe>
+    </div>
+
+    <!-- YouTube Video with Autoplay -->
+    <div class="iframe-container">
+        <h2>Watch this Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HViOPRTO324?autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="social-links">
+        <h2>Follow Me on Social Media</h2>
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+        <a href="https://github.com/GEEGEEEG" target="_blank">GitHub</a>
+        <!-- Add more social media links as needed -->
+    </div>
+</div>
+
+</body>
+</html>
